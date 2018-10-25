@@ -1,0 +1,49 @@
+git status = melihat status
+git add namafile = menandai file yang di ubah
+git add . = menandai semua file yang di ubah 
+git commit -m "pesan" = membahkan file atau apa yg sudah kita lakukan
+git log = melihat apa saja yang sudah kita buat
+git log --oneline = melihat apa saja yang sudah kita buat dalam 1 baris
+
+branch adalah sebuah cabang sebu kode, misal front-end dan back-end
+git branch = melihat branch
+git branch namabranch = membuat sebuah branch
+git checkout namabranch = berpindah branch
+git branch -d namabranch = menghapus branch, pastikan tidak berada di branch yg akan dihapus
+git checkout -b namabranch = membuat branch dan berpindah ke branch tsb
+
+git checkout codecommit -- namafile = berpindah kedalam commit yang sudah dibuat dan menghapus file codingan yang sudah diisi
+
+git reset mirip dgn checkout
+git reset codecommit = mereset commit tanpa menghapusnya di file codingan
+git reset --hard commit = mereset commit dan menghapus file di codingan
+
+git merge menggabungkan branch dan code2
+git merge namabranch1 = menggabungkan branch1 ke branch lain
+
+git conflict = terjadi penambahan2 di tempat yang sama, sehingga git bingung untuk menambahkan perubahan yang mana
+harus diperhatikan mana yang akan dipakai 
+
+git clone url = mengclone git 
+git push = merepo git
+
+git push origin namabranch = add branch ke github (sama seperti git push tp lebih lengkap)
+
+git push bisa juga untuk merepo, tinggal ketik git push lalu lihat pilihan yang di berikan git
+misal git push lalu muncul "git push --set-upstream origin staging" jika sudah lalu untuk push lagi tidak perlu dgn "git push --set-upstream origin staging" hanya git push
+git pull untuk mengcopy perubahan dari github ke dalam komputer lokal kita
+
+moderncvcolororange.sty
+
+misal kita donwload atau clone repositori di lain komputer, maka hanya barnch master yang kelihatan. sehingga untuk itu menggunakan git fetch
+git fetch && git checkout staging = menarik branch staging lalu checkout ke branch staging
+
+merge in github
+pilih branch yg akan di tambahkan, misal staginng akan ditambahakan ke master
+klik new pull request
+perhatikan branchnya, tambahkan comentar dll, klik create pull request
+
+setelah proses merge di github, dikomputer lokal belum berubah, sehingga perlu 
+git pull
+
+

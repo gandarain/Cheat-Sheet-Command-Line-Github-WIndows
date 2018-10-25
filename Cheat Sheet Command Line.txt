@@ -1,0 +1,32 @@
+dir = melihat isi di dalam folder
+cd.. = keluar dari folder
+cd NamaFolder = masuk kedalam folder  (cd Documents)
+cd\ = keluar langsung ke direktori awal
+
+mkdir NamaFolder = membuat folder
+mkdir Namafolder1 NamaFolder2 = membuat 2 folder sekaligus
+rmdir NamaFolder = menghapus folder yang tidak ada isinya
+rmdir NamaFolder1 NamaFolder2 = menghapus 2 folder sekaligus
+copy NUL NamaFile = membuat sebuah file (copy NUL index.html)
+del NamaFile = menghapus file
+cls = mengclear tampilan cmd
+del *.css = menghapus file yang berekstensi css
+rmdir /S style = menghapus folder yang sudah ada isi nya
+
+mkdir "satu dua" = membuat folder dengan nama memiliki spasi
+rmdir "satu dua" = menghapus folder yang nama foldernya memiliki spasi
+move namafile namafilebaru = merubah nama file / folder
+move namafile namafolder = memindahkan file ke folder jika namafolder sudah ada
+move namafile ../namafolder = memindahkan sebuah file dr sebuah folder ke folder lain (../ untuk keluar dulu dr folder awal, karena posisi folder nya sejajar)
+move namafile ../ = memindahkan file keluar dari direktori (folder)
+move namafolder1 namafolder2 = memindahkan folder1 ke dalam folder2 jika folder2 sudah ada sebelumnya
+move namafile ../namafolder/namafilebaru = memindahkan file ke dlm folder dan mengganti nama file 
+
+copy NUL > index.html = membuat file
+copy namafile ..\namafolder = mencopy file ke dalam folder (..\ diperlukan untuk keluar dahulu lalu mengcopy file tsb)
+copy namafile ..\namafilebaru = mencopy file ke luar direktori dan merubah namanya
+copy namafile ..\namafolder\namafilebaru = mencopy sebuah baru dari sebuah foler ke folder lain dan mengubah namafile nya
+xcopy namfolder namafolder2\namafolder = mencopy folder ke dalam namafolder2 secara keseluruhan (mengcopy semua isi folder dan beserta folder nya)
+
+copy NUL > namafile && mkdir namafolder =  membuat file dan folder sekaligus (&& sebagai penghubung)
+
